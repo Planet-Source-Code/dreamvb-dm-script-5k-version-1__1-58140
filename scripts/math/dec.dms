@@ -1,0 +1,3 @@
+Procedure Main();
+    echo @dec("&hFFFF") // returns 65535
+End Main;

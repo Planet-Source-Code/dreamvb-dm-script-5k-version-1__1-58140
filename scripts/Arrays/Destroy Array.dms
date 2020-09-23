@@ -1,0 +1,15 @@
+Procedure Main();
+var $ben(1);
+
+$ben(0) = "A";
+$ben(1) = "B";
+
+echo $Ben(0);
+echo $Ben(1);
+// Lines above will be shown
+
+Destroy $Ben;
+echo "Size of array is: " & @SizeOf($ben);
+// Line above will return -1 since our array has been destroyed
+
+End Main;

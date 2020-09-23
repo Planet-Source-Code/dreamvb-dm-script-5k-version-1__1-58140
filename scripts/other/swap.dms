@@ -1,0 +1,21 @@
+Procedure swap($a,$b);
+var $tmp;
+   $tmp = $a;
+   $a = $b;
+   $b = $tmp;
+   $tmp = "";
+end swap;
+
+Procedure Main();
+var $a,$b;
+
+$a = "X";
+$b = "Y";
+
+echo "%a is now " & $a & " %b is now " & $b ;
+
+call swap($a,$b);
+
+echo "%a is now " & $a & " %b is now " & $b ;
+
+End Main;

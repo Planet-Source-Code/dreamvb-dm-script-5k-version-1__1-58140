@@ -1,0 +1,3 @@
+Procedure Main();
+    echo @mult(10,6);
+End Main;

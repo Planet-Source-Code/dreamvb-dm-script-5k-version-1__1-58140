@@ -1,0 +1,14 @@
+//welcome to DM++ scripting
+// Version 1
+
+enum LastName{
+  Ben = "Jones";
+}
+
+enum Members{
+   Ben = LastName(Ben);
+}
+
+Procedure Main();
+  echo Members(Ben);
+End Main;

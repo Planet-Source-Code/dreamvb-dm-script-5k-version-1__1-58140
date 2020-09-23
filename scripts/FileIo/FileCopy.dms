@@ -1,0 +1,12 @@
+//welcome to DM++ scripting
+// Version 1
+
+Procedure Main();
+Var $OldFile,$NewFile;
+
+    $OldFile = "C:\test.txt";
+    $NewFile = "C:\readme.txt";
+    CopyFile $OldFile,$NewFile;
+    
+
+End Main;

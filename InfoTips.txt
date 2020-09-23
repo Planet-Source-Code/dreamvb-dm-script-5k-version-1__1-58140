@@ -1,0 +1,5 @@
+ID=Creates a application that requires the DM++ Framework to be installed on the system.\n\n Note module files are not compiled in the appliaction.
+ID=Creates a application that does not require the DM++ Framework to be installed on the system\n All Module files are also compiled in to the appliaction.
+ID=Specifies the output location of were your compiled application will be placed.
+ID=Encrypts the applications sourcecode this makes it much harder for people to recover your propjet sources.
+ID=Appliactions with this option can only be run by the system administrator of this machine.\n\n Note only works on NT based Systems. WindowsNT..Window 2000..Windows XP series.

@@ -1,0 +1,5 @@
+Module <math.d>
+
+Procedure Main();
+    echo @BitNot(5); // Returns 6
+End Main;

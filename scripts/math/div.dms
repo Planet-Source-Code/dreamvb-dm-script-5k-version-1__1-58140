@@ -1,0 +1,3 @@
+Procedure Main();
+   echo @div(10,2);
+End Main;

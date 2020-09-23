@@ -1,0 +1,3 @@
+Procedure Main();
+    echo @average(2,2,2,2,5,10);
+End Main;

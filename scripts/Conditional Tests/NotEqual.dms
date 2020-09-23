@@ -1,0 +1,11 @@
+Procedure Main();
+var %num;
+
+%num = 5.5;
+if (%num <> 5.5) then
+echo "%num was not equal to 5.5";
+break;
+else
+echo "%num is equal to 5.5";
+end if
+End Main;

@@ -1,0 +1,40 @@
+module <fileio.d>
+
+function UpDate($num);
+   return @Add($num,1);
+end UpDate;
+
+Procedure Main();
+var $file,$num,%r,$num2,%Counter;
+
+$file = "counter.dat";
+$num = @openfile($file);
+
+$num2 = @val($num);
+$num = @Eval(@Val($num) > 9);
+
+if (@BoolToInt($num)) then
+  echo "Your trial period is over",16,"Trial Demo";
+  break;
+end if
+
+if (@val($num2) == 0) then
+   echo "You may load this script 10 more times before it runs out",mbinformation,"Trial Demo";
+   %r = @writefile($file,"1");
+   goto Start:
+   break;
+else
+    %Counter = $num2;
+    %Counter = @Add(%Counter,1);
+    %r = @writefile($file,%Counter);
+end if
+
+// add your main script code here
+
+Start:
+echo "The script counter is at: " & %Counter,mbinformation,"Trial Demo";
+
+End Main;
+"Trial Demo";
+
+End Main;

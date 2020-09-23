@@ -1,0 +1,5 @@
+Procedure Main();
+    echo "Script Filename: " & Script.PathFileName;
+    echo "Your Using version " & Script.VersionBuild;
+End Main;
+

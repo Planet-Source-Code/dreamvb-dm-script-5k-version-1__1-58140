@@ -1,0 +1,10 @@
+//welcome to DM++ scripting
+// Version 1
+
+Procedure Test();
+  echo "I am in procedure Test" & dmcrlf & dmcrlf & "I was called from Procedure Main";
+End Test;
+
+Procedure Main();
+   Call Test;
+End Main;

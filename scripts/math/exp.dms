@@ -1,0 +1,3 @@
+Procedure Main();
+    echo @exp(3) // returns 20.0855369231877
+End Main;

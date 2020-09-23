@@ -1,0 +1,6 @@
+module <math.d>
+
+Procedure Main();
+   echo "Is Float 5 " & @isfloat(5); //returns false
+   echo "Is Float 10.5 " & @isfloat(10.5); // returns true
+End Main;

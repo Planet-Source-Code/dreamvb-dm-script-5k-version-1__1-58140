@@ -1,0 +1,13 @@
+Procedure Main();
+var $names(1);
+var $Array(2);
+var %num;
+%num = 1;
+
+$Array(1) = "Hello";
+$Array(2) = " How are You";
+
+$names(%num) = $Array(%num) & $Array(2);
+
+echo $names(1);
+End Main;

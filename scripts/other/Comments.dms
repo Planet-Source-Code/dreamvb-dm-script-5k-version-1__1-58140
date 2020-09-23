@@ -1,0 +1,8 @@
+// This is a comment
+
+Procedure Main();
+// This is another comment.
+
+echo "Comments can be used to mark out code or give a" _
+& " Description of something"; // Yet one more comment
+End Main;

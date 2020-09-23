@@ -1,0 +1,3 @@
+Procedure Main();
+    echo @asc("A") // Returns 65
+End Main;

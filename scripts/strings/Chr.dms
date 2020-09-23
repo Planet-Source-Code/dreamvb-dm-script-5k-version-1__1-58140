@@ -1,0 +1,7 @@
+//welcome to DM++ scripting
+// Version 1
+Procedure Main();
+Var $StrB;
+   $StrB = "Char Demo" & dmCrlf & @chr(65) & dmCrlf & @chr(66) & dmcrlf & @chr(67) & dmCrlf & @chr(68);
+   echo $StrB;
+End Main;

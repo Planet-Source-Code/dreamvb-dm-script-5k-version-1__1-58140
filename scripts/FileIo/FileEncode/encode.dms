@@ -1,0 +1,54 @@
+module <math.d>
+module <strings.d>
+module <Fileio.d>
+
+function Encode($s,%key);
+var %num;
+var %ch,%c;
+Var $StrB;
+
+for %num = 1 to @len($s);
+  %ch = @asc(@strcpy($s,%num,1));
+  %c = @BitXor(%ch,%key);
+  $StrB = "" & $StrB & @Chr(%c);
+next
+
+return $StrB;
+
+%ch = 0;
+$StrB = "";
+%num = 1;
+
+end encode;
+
+
+Procedure Main();
+var $Cmd,$FileBuff;
+var $FileName,%res,%nKey;
+
+
+    %nKey = @Val(@prompt("Enter in your secret key:");
+
+    $Cmd = @Command();
+    $FileName = @Split($Cmd,"-",2);
+
+    if (@Dir($FileName) == "") then
+        echo "File not Found",16
+        break;
+    end if
+  
+    $FileBuff = @openfile($FileName)
+    $FileBuff = @Encode($FileBuff,%nKey);
+    %res = @WriteFile($FileName,$FileBuff);
+    echo $Filename & dmcrlf & "has now been updated" & dmcrlf _
+    & "Just run the file agian to decode or encode the file",mbinformation
+
+    $FileBuff = "";
+    $FileName = "";
+    $cmd = "";
+
+End Main;
+
+
+End Main;
+d Main;

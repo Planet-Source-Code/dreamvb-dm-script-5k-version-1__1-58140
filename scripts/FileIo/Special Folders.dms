@@ -1,0 +1,29 @@
+Procedure Main();
+var $Folders(8);
+var %i,$StrA,$StrB;
+
+$Folders(0) = "Administrative Tools";
+$Folders(1) = "AppData";
+$Folders(2) = "Cache";
+$Folders(3) = "Cookies";
+$Folders(4) = "Desktop";
+$Folders(5) = "Favorites";
+$Folders(6) = "Personal";
+$Folders(7) = "Start Menu";
+$Folders(8) = "Templates";
+
+%i = 0;
+
+for %i = 0 to @SizeOf($Folders);
+  $StrA = @GetSpecialFolder($Folders(%i));
+  $StrB = "" & $StrB  & $Folders(%i) & ":  " & $StrA & dmcrlf;
+next
+
+echo $StrB,mbinformation,"Special Folder Locations";
+
+%i = 0
+$StrA = ""
+$StrB = "";
+Destroy $Folders;
+
+End Main;

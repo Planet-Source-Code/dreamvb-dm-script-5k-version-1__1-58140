@@ -1,0 +1,12 @@
+Procedure Main();
+var $test();
+
+ReDim $test(1); // Resize and preserve the array
+
+$test(0) = "Hello ";
+$test(1) = "World";
+
+echo $test(0) & $test(1);
+
+
+End Main;

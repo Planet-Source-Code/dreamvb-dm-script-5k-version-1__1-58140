@@ -1,0 +1,3 @@
+Procedure Main();
+    echo @abs(-146.6); // returns 146.6
+End Main;

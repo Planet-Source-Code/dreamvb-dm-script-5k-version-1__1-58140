@@ -1,0 +1,14 @@
+Procedure Main();
+var %a,%b;
+
+%a = 4;
+%b = 9;
+
+if (%a like %b) then
+   echo "%a and %b are the same"
+   break;
+else
+   echo "%a and %b are not the same";
+end if
+
+End Main;

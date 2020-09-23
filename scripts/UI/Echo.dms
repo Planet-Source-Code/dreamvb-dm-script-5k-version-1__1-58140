@@ -1,0 +1,6 @@
+//welcome to DM++ scripting
+// Version 1
+
+Procedure Main();
+  echo "Hello World" & dmCrlf & dmCrlf & "Welcome to DM++ Script","64","Hello";
+End Main;

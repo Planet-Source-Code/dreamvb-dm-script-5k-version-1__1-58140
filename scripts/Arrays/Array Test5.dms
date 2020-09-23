@@ -1,0 +1,5 @@
+Procedure Main();
+var $ben(4);
+    echo "Array has " & @SizeOf($ben) & " elements";
+
+End Main;

@@ -1,0 +1,8 @@
+//welcome to DM++ scripting
+// Version 1
+
+Procedure Main();
+    echo "This line has been excuted the next will not";
+    break;
+    echo "You should not see me."
+End Main;

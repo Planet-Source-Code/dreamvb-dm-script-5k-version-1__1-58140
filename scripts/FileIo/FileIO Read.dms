@@ -1,0 +1,11 @@
+Procedure Main();
+    var $lzFile;
+    var $buff;
+    $lzFile = "c:\test.txt";
+    open [$lzfile] for binary;
+           $buff = @space(@lof());
+           Get,,$buff;
+    closefile;
+
+   echo $buff;
+End Main;

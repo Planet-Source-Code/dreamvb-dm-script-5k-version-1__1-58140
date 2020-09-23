@@ -1,0 +1,20 @@
+//welcome to DM++ scripting
+// Version 1
+
+Procedure Main();
+var $text1,$text2,$Check;
+
+$text1 = "A";
+$text2 = "A";
+
+$Check = @IntToBool(@isEqual($text1,$text2));
+
+    Switch $Check
+            case True:
+                 echo "$text1 is the same as $text2",64
+                 break;
+             case False:
+                  echo "$text1 is not the same as $text2",64;
+                  break;
+     End Switch
+End Main;

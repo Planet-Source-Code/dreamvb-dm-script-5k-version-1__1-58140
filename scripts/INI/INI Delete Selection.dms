@@ -1,0 +1,14 @@
+Procedure Main();
+var $iniFile;
+var %Ret;
+
+$iniFile = "C:\TestIni.ini";
+%Ret = @INIDeleteSelection($iniFile,"Selection2");
+
+if (%Ret <> 1) then
+  echo "Ini selection was not deleted";
+else
+  echo "The Ini selection has now been deleted";
+end if
+
+End Main;

@@ -1,0 +1,4 @@
+Procedure Main();
+  echo @StrWeekName(1); // Returns Sunday
+  echo @StrWeekName(1,dmTrue); // Returns Sun
+End Main;

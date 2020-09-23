@@ -1,0 +1,3 @@
+Procedure Main();
+    echo @pi(); // returns 3.14159265358979
+End Main;

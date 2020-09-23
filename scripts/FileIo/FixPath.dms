@@ -1,0 +1,5 @@
+module <FileIo.d>
+
+Procedure Main();
+echo @FixPath("C:\windows"); // This needs a back slash added
+End Main;

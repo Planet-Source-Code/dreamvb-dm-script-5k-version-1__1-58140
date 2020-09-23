@@ -1,0 +1,13 @@
+//welcome to DM++ scripting
+// Version 1
+
+Procedure Main();
+if (@eval(@asc("A") + @Asc("A")) == 130) then
+   echo "is equal to 130"
+   break;
+else
+   echo "is not equal to 130";
+   break;
+end if
+
+End Main;

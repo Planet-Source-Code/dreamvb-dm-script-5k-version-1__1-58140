@@ -1,0 +1,16 @@
+//welcome to DM++ scripting
+// Version 1
+Procedure Main();
+var $var1;
+var $var2;
+var $var3;
+var $var4;
+
+$var1 = "Line 1";
+$var2 = "Line 2";
+$var3 = "Line 3";
+
+$var4 = $var1 & dmcrlf & dmtab & $var2 & dmcrlf & dmtab & dmtab & $var3;
+echo "Using Tabs" & dmcrlf & dmcrlf & $var4;
+
+End Main;

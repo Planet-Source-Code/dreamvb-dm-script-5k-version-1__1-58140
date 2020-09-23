@@ -1,0 +1,4 @@
+Procedure Main();
+    Const PI = 3.14159265358979;
+    echo "Radius = " & @eval(180 / PI);
+End Main;

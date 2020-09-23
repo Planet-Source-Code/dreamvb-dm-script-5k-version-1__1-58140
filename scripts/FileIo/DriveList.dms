@@ -1,0 +1,47 @@
+function StrDrvType($sDrive);
+var %type,$Name;
+
+%type = @Win32("DriveType",$sDrive);
+
+switch %type
+   case dwRemovable:
+      $Name = "Removable";
+      goto Show:
+   case dwFixed:
+      $Name = "Fixed";
+      goto Show:
+   case dwRemote:
+      $Name = "Remote";
+      goto Show:
+   case dwCDRom:
+      $Name = "CD-ROM";
+     goto Show:
+   case dwRamDisk:
+      $Name = "RAM-DISK";
+      goto Show:
+end switch;
+
+Show:
+
+return $Name
+
+end StrDrvType;
+
+Procedure Main();
+var $s;
+var %i;
+
+%i = 0;
+
+for %i = 0 to @drives.count();
+   $s = "" & $s & @DriveList(%i) & dmTab & @StrDrvType(@DriveList(%i)) & dmCrlf;
+next
+
+echo "Drives Connected to this PC: " & _
+dmCrlf & dmCrlf & $s,mbinformation;
+
+$s = "";
+%i = 0;
+
+
+End Main;

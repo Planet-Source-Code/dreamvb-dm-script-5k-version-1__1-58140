@@ -1,0 +1,14 @@
+Procedure Main();
+var $Tmr;
+  
+  $Tmr = @prompt("Enter a new time: ","SetTime");
+
+  if (@len($Tmr) == 0) then
+      echo "No time value was entered";
+      break;
+  else
+      SetTime $Tmr;
+      echo "New time is now: " & @Time();
+  End if
+
+End Main;

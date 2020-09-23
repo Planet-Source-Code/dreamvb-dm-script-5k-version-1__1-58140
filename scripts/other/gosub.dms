@@ -1,0 +1,27 @@
+Procedure Main();
+var %intAgeRange;
+%intAgeRange = 2;
+
+On %intAgeRange GoSub Infant, Toddler, School, Adult;
+
+break;
+
+Infant:
+    echo "Infant";
+    break;
+    
+Toddler:
+    echo "Toddler"
+    break;
+
+School:
+    echo "School"
+    break;
+
+Adult:
+    echo "Adult"
+    break;
+default:
+    echo "Item not in list";
+    
+End Main;

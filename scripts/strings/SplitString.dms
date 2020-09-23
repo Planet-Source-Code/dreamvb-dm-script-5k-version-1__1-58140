@@ -1,0 +1,37 @@
+Procedure Main();
+var $Str,$ch,$b;
+var %i,%Cnt;
+var $List();
+
+$Str = "Sun,Mon,Tue,Wed,Thu,Fri,Sat,";
+%Cnt = 0;
+
+for %i = 1 to @len($Str);
+   $ch = @StrCpy($Str,%i,1);
+   $b = "" & $b & $ch;
+
+   if ($ch == ",") then
+     %cnt = @Add(%cnt,1);
+     Redim $List(%cnt);
+     $b = @left($b,@Sub(@len($b),1));
+     $List(%cnt) = $b;
+     $b = "";
+   end if
+next
+
+$ch = "";
+$b = "";
+$Str = "";
+%cnt = 0;
+
+echo $List(1);
+echo $List(2);
+echo $List(3);
+echo $List(4);
+echo $List(5);
+echo $List(6);
+echo $List(7);
+
+Destroy $List;
+
+End Main;

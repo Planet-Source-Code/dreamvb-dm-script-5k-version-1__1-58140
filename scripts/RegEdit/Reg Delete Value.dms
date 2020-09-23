@@ -1,0 +1,12 @@
+Procedure Main();
+var %result;
+
+%result = @RegDeleteValue("HKCU\TestKey\test1");
+
+if (%result <> 0) then
+   echo "The key value was not deleted";
+else
+  echo "The key value was deleted";
+end if
+
+End Main;

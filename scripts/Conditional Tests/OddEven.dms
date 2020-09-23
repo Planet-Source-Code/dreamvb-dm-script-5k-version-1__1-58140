@@ -1,0 +1,22 @@
+module <math.d>
+
+// This code checks if a given number is odd or even.
+
+Procedure Main();
+var %icheck;
+    
+    %icheck = @val(@prompt("Please enter a number:",""));
+    %icheck = @isoddeven(%icheck);
+
+    if (%icheck == 1) then
+        echo "number is odd",mbinformation;
+        goto start:
+        break;
+    else
+        echo "number is even",mbinformation;
+    end if
+
+    Start:
+    echo "Well did you like that Math test demo";
+end main;
+

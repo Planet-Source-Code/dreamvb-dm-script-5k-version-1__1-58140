@@ -1,0 +1,8 @@
+//welcome to DM++ scripting
+// Version 1
+Procedure Main();
+var $Time;
+$time = @time();
+
+echo "The time now is: " & $Time;
+End Main;

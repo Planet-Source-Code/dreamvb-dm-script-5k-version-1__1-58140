@@ -1,0 +1,9 @@
+Function windir();
+var $WindowsFolder;
+   $WindowsFolder = "" & @lcase(@GetEnv("Windir")) & "\";
+   return "Windows folder is " & dmcrlf & $WindowsFolder;
+end windir;
+
+Procedure Main();
+   echo @WinDir();
+End Main;

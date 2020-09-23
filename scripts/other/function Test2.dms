@@ -1,0 +1,10 @@
+Procedure FileExt($lzFile);
+var %pos,$extName,%i;
+    %pos = @chrpos($lzFile,".");
+    %i = @sub(@len($lzFile),%pos);
+    Return @ucase(@right($lzFile,%i));
+end FileExt;
+
+Procedure Main();
+    echo @FileExt("C:\somefile.txt");
+End Main;

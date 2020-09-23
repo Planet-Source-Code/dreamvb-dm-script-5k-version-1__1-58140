@@ -1,0 +1,8 @@
+//welcome to DM++ scripting
+// Version 1
+Procedure Main();
+var $File,%Num;
+$File = "c:\WINDOWS\system32\calc.exe";
+shell $File;
+SendKeys "5 {+} 5 {=}"
+End Main;

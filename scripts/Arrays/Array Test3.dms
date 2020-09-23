@@ -1,0 +1,17 @@
+Procedure Main();
+var $Names(3);
+var %num;
+var %m;
+
+$Names(0) = "Borland";
+$Names(1) = "Microsoft"
+$Names(2) = "I.B.M"
+$Names(3) = "Intel"
+
+%num = 0
+
+for %num = 0 to @Sizeof($Names);
+   echo $Names(%num),mbinformation,%num
+next
+
+End Main;

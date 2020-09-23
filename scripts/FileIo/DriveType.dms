@@ -1,0 +1,38 @@
+Procedure Main();
+var %type,$Name,$sDrive;
+$sDrive = @Prompt("Enter a Drive Letter","");
+
+if (@Len($sDrive) == 0) then
+   echo "No drive name entered";
+   break;
+endif
+
+%type = @win32("DriveType",$sDrive);
+
+if (%type == 1) then
+  echo "Drive not found",16;
+  break;
+end if
+
+switch %type
+   case dwRemovable:
+      $Name = "Removable";
+      goto Show:
+   case dwFixed:
+      $Name = "Fixed";
+      goto Show:
+   case dwRemote:
+      $Name = "Remote";
+      goto Show:
+   case dwCDRom:
+      $Name = "CD-ROM";
+     goto Show:
+   case dwRamDisk:
+      $Name = "RAM-DISK";
+      goto Show:
+end switch;
+
+Show:
+echo "Drive " & $sDrive & " is " & $Name,mbInformation;
+
+End Main;

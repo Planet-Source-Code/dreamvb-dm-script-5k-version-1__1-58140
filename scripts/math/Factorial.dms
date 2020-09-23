@@ -1,0 +1,12 @@
+Procedure Main();
+var %num,%i;
+var %Factorial;
+%Factorial = 6
+%num = 1;
+
+for %i = 1 to %Factorial;
+  %num = @mult(%num,%i);
+next
+
+echo "The Factorial Value of " & %Factorial & " is " & %num;
+End Main;

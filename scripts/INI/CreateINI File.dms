@@ -1,0 +1,15 @@
+Procedure Main();
+var $iniFile;
+var %Ret;
+
+$iniFile = "C:\TestIni.ini";
+
+%Ret = @IniCreateFile($iniFile);
+
+if (%Ret <> 1) then
+  echo "The ini file chould not be created";
+else
+  echo "The ini file has now been created";
+end if
+
+End Main;

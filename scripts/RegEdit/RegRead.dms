@@ -1,0 +1,10 @@
+Procedure Main();
+var $Root,$result,%result;
+$Root = "HKCU\TestKey";
+
+$result = @RegRead($Root,"Test1","REG_SZ");
+echo $result;
+%result = @RegRead($Root,"Test2","REG_DWORD");
+echo %result;
+
+End Main;

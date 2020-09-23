@@ -1,0 +1,7 @@
+Procedure Main();
+    Const Name = "DM++ Script";
+    Const Version = "1.0";
+    Const mbInformation = 64
+
+    Echo Name & dmcrlf & "Version : " & Version,mbInformation,"About..."
+End Main;

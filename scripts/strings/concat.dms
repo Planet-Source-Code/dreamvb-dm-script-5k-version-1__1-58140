@@ -1,0 +1,14 @@
+//welcome to DM++ scripting
+// Join one or more strings tougther only usfull for large strings
+
+Procedure Main();
+var $str,$var1,$var2;
+$var1 = "scripting" & dmcrlf;
+
+$var2 = "" & dmcrlf & dmtab & "Made by ben Jones";
+
+$str = @concat("Welcome"," to "," DM++ ",$var1,$var2);
+
+echo $str;
+End Main;
+

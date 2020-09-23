@@ -1,0 +1,8 @@
+Procedure Main();
+var %num;
+
+%num = @prompt("Enter a Decimal number:","Decimal to Binary Convertor");
+%num = @Dec2Bin(@val(%num));
+
+echo %num,mbinformation,"Binary";
+End Main;
