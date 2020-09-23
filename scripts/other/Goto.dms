@@ -1,0 +1,9 @@
+//welcome to DM++ scripting
+// Version 1
+
+Procedure Main();
+Goto Start:
+     echo "Do not show me";
+Start:
+     echo "But show me";
+End Main;

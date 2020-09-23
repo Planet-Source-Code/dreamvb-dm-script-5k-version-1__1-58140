@@ -1,0 +1,12 @@
+//welcome to DM++ scripting
+// Version 1
+
+Procedure Main();
+var $file;
+var %size;
+
+$file = "C:\test.txt"
+%size = @FileSize($file);
+
+echo $file & " is " & %size & " bytes";
+End Main;

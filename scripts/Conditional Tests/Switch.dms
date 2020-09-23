@@ -1,0 +1,17 @@
+//welcome to DM++ scripting
+// Version 1
+
+Procedure Main();
+var $var1,$msgType;
+
+    $msgType = 36;
+    $var1 = @echo("Do you like DM++ Script",$msgType,"Message Box Title");
+
+    Switch $var1;
+         case 6:
+              echo "I am very glad you like it.",64,"Yes";
+              break;
+         case 7:
+            echo "O Well never mind",16,"NO";
+    End Switch;
+End Main;

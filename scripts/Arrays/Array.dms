@@ -1,0 +1,10 @@
+Procedure Main();
+var $A,%B;
+
+$A = @Array(151,165,264);
+%B = $A(1);
+
+echo %B; // Returns 165
+
+
+End Main;

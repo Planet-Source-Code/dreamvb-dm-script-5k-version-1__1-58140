@@ -1,0 +1,11 @@
+Procedure Main();
+var $iniFile;
+var $KeyResult;
+
+$iniFile = "C:\TestIni.ini";
+
+$KeyResult = @IniReadKey($iniFile,"Selection2","filename","Error");
+
+Echo "Script Path: " & $KeyResult;
+
+End Main;

@@ -1,0 +1,13 @@
+module <strings.d>
+
+Procedure Main();
+var $a,$b,$dwStr;
+$dwStr = "Welcome to DM++ Scripting For Microsoft Windows.";
+
+$a = @StrRev($dwStr);
+$b = @StrRev($a);
+
+echo $a;
+echo $b;
+
+End Main;

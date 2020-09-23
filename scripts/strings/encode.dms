@@ -1,0 +1,41 @@
+// Very simple XOR Encryption example.
+
+module <math.d>
+
+function Encode($s,%key);
+var %num;
+var %ch,%c;
+Var $StrB;
+
+for %num = 1 to @len($s);
+  %ch = @asc(@strcpy($s,%num,1));
+  %c = @BitXor(%ch,%key);
+  $StrB = "" & $StrB & @Chr(%c);
+next
+
+return $StrB;
+
+%ch = 0;
+$StrB = "";
+%num = 1;
+
+end encode;
+
+
+Procedure Main();
+var $a,$b,$c;
+var %Secret = 43;
+
+    $a = "Let's encrypt this string";
+    $b = @encode($a,%Secret)
+    $c = @encode($b,%Secret);
+    echo $a & " is encoded to: " & dmCrLf & dmCrlf & $b;
+    echo $b & " is encoded back to: " & _
+    dmCrLf & dmCrlf & $c;
+
+    %Secret = 0;
+    $a = "";
+    $b = "";
+    $c = "";
+
+End Main;

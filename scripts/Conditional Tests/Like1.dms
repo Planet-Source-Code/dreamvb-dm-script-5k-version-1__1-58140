@@ -1,0 +1,4 @@
+Procedure Main();
+    echo @Eval(65 like 4); // returns false
+    echo @Eval(65 like 65); // returns true
+End Main;

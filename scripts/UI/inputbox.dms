@@ -1,0 +1,13 @@
+//welcome to DM++ scripting
+// Version 1
+Procedure Main();
+var $Name;
+var $test;
+var $Age;
+
+$Name = @prompt("What is your name:");
+$Age = @prompt("How old are you: " & $Name);
+
+Echo "Hello " & $Name & " You are " & $Age & " Years old today";
+
+End Main;

@@ -1,0 +1,11 @@
+Procedure Main();
+Var $test;
+var %number;
+
+    $test = "Hello World";
+    %number = 128;
+
+    echo $test;
+    echo %number;
+
+End Main;

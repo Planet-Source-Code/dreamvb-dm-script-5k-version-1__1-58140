@@ -1,0 +1,9 @@
+//welcome to DM++ scripting
+// Version 1
+
+Procedure Main();
+   Echo "This will now pause";
+   pause 2
+   echo "Hello Agian";
+End Main;
+

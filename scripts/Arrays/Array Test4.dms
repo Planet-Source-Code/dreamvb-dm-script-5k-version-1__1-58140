@@ -1,0 +1,9 @@
+Procedure Main();
+Var $Test(1);
+var $StrB;
+
+$Test(1) = "Hello";
+
+$StrB = $Test(1);
+echo $StrB;
+End Main;

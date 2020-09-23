@@ -1,0 +1,8 @@
+//welcome to DM++ scripting
+// Version 1
+Procedure Main();
+var $Text;
+
+    $Text = "DM ++ Script Version 1";
+    echo $Text & " is [" & @len($Text) & "] letters long";
+End Main;

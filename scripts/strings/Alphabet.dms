@@ -1,0 +1,11 @@
+Procedure Main();
+var %i = 65;
+var $AlphaBet;
+
+for %i = @Asc("A") to @Asc("Z")
+    $AlphaBet = "" & $AlphaBet & @UCase(@chr(%i));
+next
+
+echo $AlphaBet & dmcrlf & dmcrlf & "Now ya no your ABC'S :-)");
+
+End Main;

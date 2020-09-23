@@ -1,0 +1,23 @@
+function FileDate($lzFile);
+var $s,$b,%Pos;
+   $s = @FileDateTime($lzFile);
+   %Pos = @ChrPos($s," ");
+   return @Trim(@StrCpy($s,1,%pos));
+end FileDate;
+
+function FileTime($lzFile);
+var $s,$b,%Pos;
+   $s = @FileDateTime($lzFile);
+   %Pos = @ChrPos($s," ");
+   return @Trim(@StrCpy($s,%pos,@Len($lzFile));
+end FileTime;
+
+Procedure Main();
+var $File;
+
+$File = @Prompt("Enter a Filename","File Info");
+
+echo "File Created time : " & @FileTime($File);
+echo "File Created Date : " & @FileDate($File);
+
+End Main;

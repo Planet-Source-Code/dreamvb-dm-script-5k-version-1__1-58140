@@ -1,0 +1,14 @@
+Procedure Main();
+var $dat;
+  
+  $dat = @prompt("Enter a new date: ","SetDate");
+
+  if (@len($dat) == 0) then
+      echo "No date value was entered";
+      break;
+  else
+      SetDate $dat;
+      echo "New date is now: " & @Date();
+  End if
+
+End Main;

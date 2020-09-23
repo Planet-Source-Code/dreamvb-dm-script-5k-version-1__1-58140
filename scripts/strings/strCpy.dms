@@ -1,0 +1,11 @@
+//welcome to DM++ scripting
+// Version 1
+
+Procedure Main();
+Var $TestStr,%offset,$p;
+    $TestStr = "DM++ For Windows";
+    %offset = 4
+    echo @StrCpy($TestStr,1,%offset); // Returns DM++
+    echo @LTrim(@StrCpy($TestStr,9,7)); // Returns Window
+    echo @StrCpy("Hello World",1,5); // Returns Hello
+End Main;

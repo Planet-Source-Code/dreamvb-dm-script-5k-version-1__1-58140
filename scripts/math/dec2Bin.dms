@@ -1,0 +1,25 @@
+// I know this is a built in function.
+// But I thought I just show what you can do with a forloop
+
+Procedure Main();
+var %i;
+var %dec;
+var $bin;
+var %check;
+%dec = 245;
+
+for %i = 1 to 8
+   %check = @eval(%dec mod 2);
+
+   if (%check == 1) then
+      $bin = "" & "1" & $bin;   
+   else
+      $bin = "" & "0" & $bin;  
+   end if
+
+   %dec = @eval(%dec div 2);
+next
+
+echo $bin;
+
+End Main;

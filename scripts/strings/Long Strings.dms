@@ -1,0 +1,11 @@
+Procedure Main();
+var $Msg;
+
+$Msg = "This is a very long string " _
+& dmcrlf & "That has been borken down with an underscore _" _
+& dmcrlf & "This makes it easyer when you need to type long" _
+& dmcrlf & dmcrlf & "Lines of statements or text an Example may be a message box";
+
+echo $Msg,mbInformation,"Breaking long strings";
+
+End Main;

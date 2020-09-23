@@ -1,0 +1,10 @@
+Procedure Main();
+var %ret;
+var $Root;
+
+$Root = "HKCU\TestKey";
+
+%ret = @RegWriteData($Root,"test1","REG_SZ","TestKey");
+%ret = @RegWriteData($Root,"test2","REG_DWORD","255");
+
+End Main;

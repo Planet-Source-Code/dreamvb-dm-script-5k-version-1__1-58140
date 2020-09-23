@@ -1,0 +1,8 @@
+//welcome to DM++ scripting
+// Version 1
+Procedure Main();
+	Clipboard.SetText "This is some text to be placed onto the clipboard.",dmText
+	echo @Clipboard.GetText(dmText);
+	Clipboard.Reset // Clear the Clipboard Contents
+	echo @Clipboard.GetText(dmText);
+End Main;

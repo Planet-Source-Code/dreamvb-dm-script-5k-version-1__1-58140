@@ -1,0 +1,7 @@
+Procedure myAdder(%num1,%num2);
+    echo @add(%num1,%num2);
+end myAdder;
+
+Procedure Main();
+    Call myAdder(10,150); // Returns the result of adding 10 and 150
+End Main;

@@ -1,0 +1,12 @@
+//welcome to DM++ scripting
+// Version 1
+
+enum MsgBox{
+   ButtonYesNo = 64;
+   Title = "Put Ya Title Here";
+   Msg = "Enumerated Consts";
+}
+
+Procedure Main();
+  echo MsgBox(msg),MsgBox(ButtonYesNo),MsgBox(Title);
+End Main;

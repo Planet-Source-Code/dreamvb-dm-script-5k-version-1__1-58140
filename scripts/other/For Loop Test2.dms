@@ -1,0 +1,11 @@
+Procedure Main();
+var $ret;
+var %i,$ch,$text,$b;
+
+for %i = 0 to 255
+   $ch = @chr(%i);
+   $b = "" & $b & $ch;
+next
+
+echo "Char Map " & dmcrlf & dmcrlf & $b,mbinformation;
+End Main;

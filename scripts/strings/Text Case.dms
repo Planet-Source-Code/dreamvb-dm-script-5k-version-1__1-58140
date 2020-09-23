@@ -1,0 +1,7 @@
+//welcome to DM++ scripting
+// Version 1
+Procedure Main();
+var $Text,$nLen;
+    $Text = "" & @lcase("TURN ME TO LOWER CASE.") & dmcrlf & @ucase("make me uppercase.");
+    echo $Text;
+End Main;

@@ -1,0 +1,13 @@
+Procedure Main();
+var $list(3),%num;
+
+$list(0) = "Yahoo.com";
+$list(1) = "Google.com";
+$list(2) = "Microsoft.com";
+$list(3) = "SnapFiles.com";
+
+%num = @Rand(4);
+
+echo "Randome Choice was: " & $list(%num);
+
+End Main;

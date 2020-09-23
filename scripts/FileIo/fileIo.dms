@@ -1,0 +1,9 @@
+module <fileio.d>
+
+Procedure Main();
+var %r,$te;
+
+   $te = @openfile("C:\test.txt"); // Read in text file
+   %r = @writefile("C:\Cool.txt",$te); // save data to new file
+   
+End Main;

@@ -1,0 +1,11 @@
+Procedure Main();
+var $lzFolder;
+    $lzFolder = @BrowseForFolder("Put Ya Title Here");
+    if (@len($lzFolder) <> 0) then
+         echo "Folder selected: " & $lzFolder,mbInformation,"Browse for Folder";
+         break;
+    else
+       echo "Cancel was pressed",16;
+    end if
+
+End Main;

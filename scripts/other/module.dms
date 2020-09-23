@@ -1,0 +1,10 @@
+Module <datetime.d>
+module <math.d>
+
+Procedure Main();
+   echo "Using date and time module file";
+   echo "System Date and Time is :" & dmcrlf & dmcrlf & @Now();
+   echo "Using math module";
+   echo "LOG10(1000) = " & @Log10(1000);
+End Main;
+

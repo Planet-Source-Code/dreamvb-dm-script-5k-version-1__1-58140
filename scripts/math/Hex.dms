@@ -1,0 +1,3 @@
+Procedure Main();
+    echo @hex(65535) // Returns FFFF
+End Main;

@@ -1,0 +1,6 @@
+VBGROUP 5.0
+StartupProject=dmFramework.vbp
+Project=ShellEx\Runner.vbp
+Project=Link\ProjLinker.vbp
+Project=exehead\exe1\Exe1.vbp
+Project=exehead\exe2\Exe2.vbp

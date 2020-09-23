@@ -1,0 +1,8 @@
+Procedure Main();
+var $ArrChr(4);
+
+$ArrChr(1) = @Chr(65);
+$ArrChr(2) = @Chr(66);
+
+echo $ArrChr(1) & $ArrChr(2);
+End Main;

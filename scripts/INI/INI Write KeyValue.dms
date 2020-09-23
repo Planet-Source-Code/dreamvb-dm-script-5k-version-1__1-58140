@@ -1,0 +1,22 @@
+Procedure Main();
+var $iniFile;
+var %KeyResult;
+
+$iniFile = "C:\TestIni.ini";
+
+%KeyResult = @IniWriteKey($iniFile,"Selection1","Key1","Hello World");
+IniWriteKey $iniFile,"Selection1","key2",65535;
+
+IniWriteKey $iniFile,"Selection2","Name","DM++ Scripting");
+IniWriteKey $iniFile,"Selection2","Version",Script.VersionBuild;
+IniWriteKey $iniFile,"Selection2","FileName",Script.PathFileName;
+IniWriteKey $iniFile,"Selection2","Date",@date();
+
+
+if (%KeyResult <> 1) then
+   echo "There was an error while opening the INI File";
+else
+  echo "The INI file has now been updated with the new values";
+end if
+
+End Main;

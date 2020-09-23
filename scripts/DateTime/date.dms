@@ -1,0 +1,8 @@
+//welcome to DM++ scripting
+// Version 1
+Procedure Main();
+var $date;
+$date = @Date();
+
+echo "Todays date is :" & $date;
+End Main;

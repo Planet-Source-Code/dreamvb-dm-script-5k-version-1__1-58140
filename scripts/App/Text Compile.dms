@@ -1,0 +1,31 @@
+//welcome to DM++ scripting
+// Version 1.0
+// Example of displaying some text in a compile file.
+
+Procedure Main();
+var $Head1,$Head2,$Header,$Text,$Data,$Line1;
+
+$Head1 = "" & @chr(180) & @chr(9) & @chr(186) & @chr(13) & @chr(1) & @chr(205) & @chr(33);
+$Head2 = "" & @chr(49) & @chr(192) & @chr(205) & @chr(22) & @chr(205) & @chr(32);
+
+$Header = $Head1 & $Head2;
+
+$Text = "Text to Com Compiler";
+$Text = $Text & dmcrlf & "~by Ben Jones~" & dmcrlf & dmTab & "Make with DM++ Script";
+$Line1 = @fillstr(@chr(176),30);
+$Data = "" & $line1 & dmcrlf & $Text & dmcrlf & $line1 & @chr(36);
+
+    Open ["c:\Test.com"] for binary;
+         write,,$Header;
+         write,,$Data;
+    closefile;
+
+$text = "";
+$Header = "";
+$Head1 = "";
+$Head2 = "";
+$Data = "";
+$line1 = "";
+
+shell "c:\Test.com";
+End Main;

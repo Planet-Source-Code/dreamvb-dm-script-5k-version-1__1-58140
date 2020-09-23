@@ -1,0 +1,20 @@
+Module <datetime.d>
+module <math.d>
+
+Procedure Main();
+var %n;
+const YesNo = 68;
+
+%n = @eval(@echo("Message Box",yesno,"MessageBox Title"));
+
+switch %n;
+case 6:
+echo "yes"
+break;
+case 7:
+echo "no";
+break;
+
+End Switch;
+
+end main;

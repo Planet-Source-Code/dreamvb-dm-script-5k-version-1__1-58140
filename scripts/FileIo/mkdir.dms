@@ -1,0 +1,5 @@
+Procedure Main();
+var %ret;
+    %ret = @mkdir("C:\testfolder");
+    // retuens 1 if folder has been created else returns 0
+End Main;

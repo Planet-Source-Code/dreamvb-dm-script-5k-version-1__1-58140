@@ -1,0 +1,17 @@
+Procedure Main();
+var %Counter;
+var $StrA,$StrB;
+var %Ans,%Table;
+
+    %Table = @val(@prompt("Please enter a number 1 to 12:","Times Table Lister"));
+
+    for %Counter = 1 to 12
+        if (%Counter > 0) then
+            %Ans = @mult(%Counter,%Table);
+            $StrA = "" & %Counter & " * " & %Table & " = " & %Ans;
+            $StrB = $StrB & $StrA & dmcrlf;
+        end if 
+    next
+    echo $StrB,mbinformation,"Times Table Lister";
+
+End Main;

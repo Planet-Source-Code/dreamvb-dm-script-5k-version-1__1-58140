@@ -1,0 +1,3 @@
+Procedure Main();
+    echo @Sub(10,5);
+End Main;

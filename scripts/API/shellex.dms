@@ -1,0 +1,10 @@
+Procedure Main();
+var %ret;
+var $email;
+var $subject;
+
+$email = "vbdream2k@yahoo.com";
+$subject = "?subject=DM++";
+
+%ret = @Win32("ShellEx",0,"","mailto:" & $email & $subject,"","",1);
+End Main;

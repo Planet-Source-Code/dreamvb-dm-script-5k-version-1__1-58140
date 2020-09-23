@@ -1,0 +1,4 @@
+Procedure Main();
+  echo @StrMonthName(1); // Returns January 
+  echo @StrMonthName(1,dmTrue); // Returns Jan
+End Main;

@@ -1,0 +1,14 @@
+module <datetime.d>
+
+Procedure Main();
+    var $p;
+    var $lzFile;
+    var $num;
+    $num = "1";
+    $lzFile = "c:\test.txt";
+
+    open [$lzfile] for binary;
+         write,@len($num),"hello world";
+    closefile;
+
+End Main;

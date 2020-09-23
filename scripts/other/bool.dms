@@ -1,0 +1,12 @@
+//welcome to DM++ scripting
+// Version 1
+
+Procedure Main();
+Var $Bool,$int;
+
+ $Bool = @IntToBool(-1);
+ echo "This has conveted the integer number -1 to it's bool value " & $Bool;
+ $int = @BoolToInt($Bool);
+ echo "This has converted the bool value " & $bool & " to it's integer value of " & $int;
+
+End Main;

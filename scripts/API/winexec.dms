@@ -1,0 +1,11 @@
+Procedure Main();
+var %ret,$applet;
+    $applet = "timedate.cpl";
+    %ret = @Win32("WinExe","Control.exe " & $applet,1);
+    
+    If (%ret == "2") Then
+        echo "There was an error loading the program",mbCritical;
+        break;
+    End If
+
+End Main;

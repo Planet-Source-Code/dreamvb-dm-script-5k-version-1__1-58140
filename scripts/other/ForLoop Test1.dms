@@ -1,0 +1,17 @@
+Procedure Main();
+var %i;
+var %ans;
+
+%ans = @echo("Whould you like to see a for loop",68);
+
+if (%ans == dmno) then
+  break;
+end if
+
+for %i = 1 to 5
+   echo "For loop counter is at: " & %i;
+next
+
+echo "Now that what I call fun :)";
+
+End Main;

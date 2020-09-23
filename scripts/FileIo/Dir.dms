@@ -1,0 +1,14 @@
+Procedure Main();
+var $check,%found;
+$check = @dir("C:\New Folder",dmFolder);
+%found = @BoolToInt(@eval($check = ""));
+
+if (%found == 0) then
+   // add your code statements below:
+   break;
+else
+   echo "C:\New Folder was not found";
+   break;
+end if
+
+End Main;

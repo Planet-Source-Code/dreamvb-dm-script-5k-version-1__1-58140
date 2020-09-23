@@ -1,0 +1,10 @@
+//welcome to DM++ scripting
+// Version 1
+
+Procedure Main();
+var $var1,$var2;
+  $var1 = "This is spaced out 10 places";
+  $var2 = "This is spaced out 20 places";
+
+  echo @space(10) & $var1 & dmCrlf & @space(20) & $var2;
+End Main;
